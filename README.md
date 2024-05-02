@@ -14,6 +14,13 @@ The python requirement is `pymongo` and needs to be installed via pip:
 python -m pip install pymongo
 ```
 
+## Starting the MongoDB local server
+
+```
+mongod --dbpath /usr/local/var/mongodb --logpath /usr/local/var/log/mongodb/mongo.log --fork
+```
+
+
 ## Writing in the database and accessing it
 
 A small script is shown to access and write in the data base using some json files. 
