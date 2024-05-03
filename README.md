@@ -32,5 +32,9 @@ source setup.sh
 python scripts/write_db.py 
 ```
 
+## Querying in the db
 
+```
+mydatabase['jsons'].find({"tests":{"$elemMatch":{"outcome":"failed", "nodeid":"test_pll.py::test_pllautolock"}}})
+```
 
